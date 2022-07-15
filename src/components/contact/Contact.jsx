@@ -5,7 +5,6 @@ import { useState } from 'react'
 import emailjs from 'emailjs-com'
 import {BsEnvelope} from 'react-icons/bs'
 import {RiLinkedinBoxLine} from 'react-icons/ri'
-import {BsWhatsapp} from 'react-icons/bs'
 
 
 const Contact = () => {
@@ -15,15 +14,16 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_k21tg8s', 'template_8aq38hi', form.current, '5SzJoWUkRHKf1tpY1')
-    setMsg("Mensagem Enviada! Obrigado.")
-    e.target.reset()
-      // .then((result) => {
-      //     console.log(result.text);
-      // }, (error) => {
-      //     console.log(error.text);
-      // });
+    emailjs.sendForm('service_1nvtwub', 'template_l2y4czl', form.current, 'JvZTDrIW92FQFToOn')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset()
   };
+  
 
   return (
     <section id='contact'>
@@ -34,8 +34,8 @@ const Contact = () => {
           <article className="contact__option">
             <BsEnvelope className="contact__option-icon"/>
             <h4>E-mail</h4>
-            <h5>jadeniji00@gmail.com</h5>
-            <a href="mailto:jadeniji54@gmail.com" >Send me a mail</a>
+            <h5>joshuatestdev00@gmail.com</h5>
+            <a href="mailto:joshuatestdev00@gmail.com" >Send me a mail</a>
           </article>
           <article className="contact__option">
             <RiLinkedinBoxLine className="contact__option-icon"/>
