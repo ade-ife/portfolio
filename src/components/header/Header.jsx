@@ -22,7 +22,7 @@ export default function Header() {
               1000,
               "Software Developer Advocate",
               1000,
-              "Fan of Milwaukee Bucks",
+              "Fan of Milwaukee Bucks 🏀",
               1000,
   
               ]}
