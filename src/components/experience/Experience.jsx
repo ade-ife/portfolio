@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillsCloud from './SkillsCloud/SkillsCloud';
 import './experience.css'
 import {CgRadioChecked} from 'react-icons/cg'
 import {AiOutlineHtml5} from 'react-icons/ai'
@@ -173,6 +174,11 @@ const Experience = () => {
           </div>
         </div>
       </div>  
+      <div className='container experience__cloud'>
+        <h4 className='h4'>Technologies I've used</h4>
+        {/* <SkillsCloud /> */}
+      </div>
+      
     </section>
   )
 }

@@ -4,7 +4,7 @@ import { useRef } from 'react'
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
 import {BsEnvelope} from 'react-icons/bs'
-import {FaHatWizard} from 'react-icons/fa'
+import {RiLinkedinBoxLine} from 'react-icons/ri'
 import {BsWhatsapp} from 'react-icons/bs'
 
 
@@ -27,34 +27,28 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h5 className='text-light'>Me fale sobre seus projetos ou deixe um comentário!</h5>
-      <h2 className='text-light'>Contato</h2>
+      <h2 className='text-light'>Get in Touch</h2>
+      <h5 className='text-light'>Got a job for me, or a question, or you just want to say hi? Feel free to reach out to me</h5>
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
             <BsEnvelope className="contact__option-icon"/>
             <h4>E-mail</h4>
-            <h5>atavares@seoxperts.com.br</h5>
-            <a href="mailto:atavares@seoxperts.com.br" >Mensagem</a>
+            <h5>jadeniji00@gmail.com</h5>
+            <a href="mailto:jadeniji54@gmail.com" >Send me a mail</a>
           </article>
           <article className="contact__option">
-            <FaHatWizard className="contact__option-icon"/>
-            <h4>Site</h4>
-            <h5>SEOxperts</h5>
-            <a href="https://seoxperts.com.br" target="_blank" rel="noopener noreferrer">seoxperts.com.br</a>
-          </article>
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon"/>
-            <h4>WhatsApp</h4>
-            <h5>+55 61 98200 0333</h5>
-            <a href="https://wa.me/message/HHVKC53QFOWZI1" target="_blank" rel="noopener noreferrer">Mensagem</a>
+            <RiLinkedinBoxLine className="contact__option-icon"/>
+            <h4>LinkedIn</h4>
+            <h5>Joshua Adeniji</h5>
+            <a href="https://www.linkedin.com/in/joshua-adeniji/" target="_blank" rel="noopener noreferrer">Connect with me</a>
           </article>
         </div>
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="name" placeholder="Seu nome" required />
-            <input type="email" name="email" placeholder="Seu e-mail" required />
-            <textarea name="message" rows="7" required placeholder="Mensagem de texto"></textarea>
-            <button type="submit" className="btn btn-primary">Enviar</button><span>{msg}</span>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your e-mail address" required />
+            <textarea name="message" rows="7" required placeholder="Enter your message..."></textarea>
+            <button type="submit" className="btn btn-primary">Say Hello</button><span>{msg}</span>
           </form>
       </div>
     </section>

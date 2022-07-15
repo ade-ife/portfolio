@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://atavares.com",
+  "homepage": "http://github.com/ade-ife",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +14,7 @@
     "react-scripts": "5.0.0",
     "react-typical": "^0.1.3",
     "swiper": "^8.0.7",
+    "TagCloud": "^2.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
