@@ -56,7 +56,6 @@ body {
 .container {
   width: var(--container-width-xl);
   margin: 0 auto;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -135,6 +134,16 @@ a:hover {
 .mono {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.834)
+      url("./assets/homer.gif") center
+      no-repeat;
+  z-index: 1;
 }
 
 /* Media Queries (Notebooks) */
