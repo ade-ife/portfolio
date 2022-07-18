@@ -54,7 +54,11 @@ body {
 
 /* General Styles */
 .container {
-  width: var(--container-width-xl);
+  width: 100%;
+}
+
+.afterLoading {
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -140,10 +144,18 @@ a:hover {
   width: 100%;
   height: 100vh;
   position: fixed;
-  background: rgba(0, 0, 0, 0.834)
+  background:#0A192F 
       url("./assets/homer.gif") center
       no-repeat;
   z-index: 1;
+}
+
+.cook {
+
+  font-size: large;
+  font-family: var(--font-family-text);
+  padding-top: 38%;
+  text-align: center;
 }
 
 /* Media Queries (Notebooks) */
@@ -151,7 +163,7 @@ a:hover {
 
 @media screen and (max-width: 1300px){
   .container {
-    width: var(--container-width-lg);
+    width: 100%;
   }
   section {
     height:auto;
@@ -163,7 +175,7 @@ a:hover {
 /* Media Queries (medium devices) */
 @media screen and (max-width: 1024px){
   .container {
-    width: var(--container-width-md);
+    width: 100%;
   }
   section {
     height:auto;
@@ -175,7 +187,7 @@ a:hover {
 /* Media Queries (small devices) */
 @media screen and (max-width: 600px){
   .container {
-    width: var(--container-width-sm);
+    width: 100%;
   }
   section {
     height:auto;

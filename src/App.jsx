@@ -26,19 +26,21 @@ const App = () => {
     <div className="container">
       {loading ? (
         <div className="loader-container">
-      	  <div className="spinner"></div>
+          <div className='cook'> <h2>e fi si le, e je ko cook</h2> </div>
         </div>
       ) : (
 
-    <div>
+        <>
+    <div className='afterLoading'>
       <Header />
       <Nav />
       <About />
       <Experience />
       <Contact />
+      </div>
       <Footer />
-
-    </div>
+          </>
+    
       )}
     </div>
     
